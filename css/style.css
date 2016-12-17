@@ -1,5 +1,12 @@
 
 @media screen and (min-width:768px){
+  .nav_l{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0;
+    position: absolute;
+  }
   .n_l{
     width: 0;
     height: 0;
@@ -642,6 +649,23 @@
   }
 }
 @media screen and (max-width:768px){
+
+  .nav_s{
+    position: absolute;
+    width: 15vw;
+    margin-left: 5vw;
+  }
+  .nav_s_img{
+    width: 5vw;
+    float: left;
+    margin-top: 5vw;
+  }
+  .nav_s_p{
+    float: right;
+    color: rgb(148,2,29);
+    margin-top: 5.8vw;
+    font-size: 3vw;
+  }
   .clear{
     clear: both;
   }
