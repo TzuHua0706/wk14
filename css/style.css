@@ -1,34 +1,19 @@
 
 @media screen and (min-width:768px){
   .nav_l{
-    width: 0;
-    height: 0;
-    opacity: 0;
-    margin: 0;
-    position: absolute;
+    display: none;
   }
   .n_l{
-    width: 0;
-    height: 0;
-    opacity: 0;
-    margin: 0;
-    position: absolute;
+    display: none;
   }
   .see_l{
-    width: 0;
-    height: 0;
-    opacity: 0;
-    margin: 0;
-    position: absolute;
+    display: none;
   }
   .clear{
     clear: both;
   }
   .d_p_look_l {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    margin: 0;
+    display: none;
   }
   body{
     margin: auto;
@@ -77,24 +62,37 @@
     margin: 0px;
   }
   .n_line{
-    width: 100px;
+    display: none;
+  /*  width: 100px;
     height: 6px;
     background-color: rgb(148,2,29);
     margin: 0px;
-    margin-left: 12.2vw;
+    margin-left: 12.2vw;*/
   }
 
   .h_ul{
     margin: 0px;
-    margin-left: 8.5vw;
+    margin-left: 6.5vw;
     height: 32px;
   }
+
   .h_li{
     list-style: none;
-    margin:8px 4vw auto 0vw;
+    margin:0px 4vw 0px 0vw;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    /*border-top: 4px solid rgb(148,2,29);
+    border-bottom:  4px solid rgb(148,2,29);*/
     float: left;
     font-size:16px;
     color: rgba(80,2,16,1);
+  }
+
+  .h_li:hover{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-top: 4px solid rgb(148,2,29);
+    border-bottom:  4px solid rgb(148,2,29);
   }
 
   .look{
@@ -107,10 +105,7 @@
   }
 
   .img_l{
-    opacity: 0;
-    margin: 0;
-    width: 0;
-    height: 0;
+    display: none;
   }
 
   .p_look{
@@ -148,6 +143,14 @@
     color: rgba(251,231,216,0.7);
     padding: 7px 0px 0px 16px;
   }
+
+  .see:hover{
+    background-color: rgba(128,66,74,1);
+  }
+  .p_see:hover{
+    color: rgba(255,255,255,1);
+  }
+
 
   .o_t_t_f{
     position: absolute;
@@ -201,22 +204,97 @@
   }
 
   .u_img{
-    margin-left: 5vw;
-    margin-top: 10vw;
+    margin-left: 3.9vw;
+    margin-top: 9vw;
     float: left;
     height: 25vw;
   }
   .m_img{
-    margin-right: 5vw;
-    margin-top: 10vw;
+    margin-right: 4vw;
+    margin-top: 8vw;
     float: right;
     height: 25vw;
   }
   .d_img{
-    margin-left: 5vw;
-    margin-top: 10vw;
+    margin-left: 3.8vw;
+    margin-top: 8.5vw;
     float: left;
     height: 25vw;
+  }
+  .black{
+    margin: 0;
+    margin-left: 5vw;
+    margin-top: 8vw;
+    float: left;
+    width: 40vw;
+    height: 25vw;
+    position: absolute;
+  }
+  .black_p{
+    width: 40vw;
+    height: 25vw;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .black:hover{
+    background-color: rgba(0,0,0,0.3);
+  }
+  .black_p:hover{
+    opacity: 1;
+    margin: 10vw 0px 0px 13vw;
+    font-size: 50px;
+  /* color: rgba(0,0,0,1);*/
+    color: rgba(230,230,230,1);
+  }
+  .black_m{
+    margin-left: 53.5vw;
+    margin-top: 8vw;
+    width: 40vw;
+    height: 25vw;
+    position: absolute;
+  }
+  .black_m_p{
+    width: 40vw;
+    height: 25vw;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .black_m:hover{
+    background-color: rgba(0,0,0,0.3);
+  }
+  .black_m_p:hover{
+    opacity: 1;
+    margin: 10vw 0px 0px 13vw;
+    font-size: 50px;
+  /*color: rgba(0,0,0,1);*/
+    color: rgba(230,230,230,1);
+  }
+  .black_d{
+    margin-left: 5vw;
+    margin-top: 8vw;
+    float: left;
+    width: 40vw;
+    height: 25vw;
+    position: absolute;
+  }
+  .black_d_p{
+    width: 40vw;
+    height: 25vw;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .black_d:hover{
+    background-color: rgba(0,0,0,0.3);
+  }
+  .black_d_p:hover{
+    opacity: 1;
+    margin: 10vw 0px 0px 13vw;
+    font-size: 50px;
+   /*color: rgba(0,0,0,1);*/
+    color: rgba(230,230,230,1);
   }
 
   .r_p{
@@ -290,31 +368,49 @@
     height: 8vw;
     margin-right: 7vw;
   }
+
   .f_u_p{
     width: 20vw;
     height: 2.5vw;
     margin: 0px;
-    padding: 4px 0px 0px 14px;
+    margin-bottom: 4px;
+    padding: 2px 0px 0px 14px;
     background-color: rgb(222,206,194);
     color: rgb(80,2,16);
     font-size: 1.8vw;
   }
+  .f_u_p:hover{
+    background-color: rgba(80,2,16,0.7);
+    color: rgb(222,206,194);
+  }
+
   .f_u_p_m{
     width: 20vw;
     height: 2.5vw;
     margin: 0px;
-    padding: 4px 0px 0px 14px;
+    margin-bottom: 4px;
+    padding: 2px 0px 0px 14px;
     background-color: rgb(222,206,194);
     color: rgb(80,2,16);
     font-size: 1.8vw;
   }
+  .f_u_p_m:hover{
+    background-color: rgba(80,2,16,0.7);
+    color: rgb(222,206,194);
+  }
+
   .f_d_p{
     margin: 0px;
-    width: 160px;
+    width: 20vw;
     padding: 0.3vw 0px 0px 1.5vw;
     font-size: 1vw;
     color: rgb(0,0,0);
   }
+  .f_d_p:hover{
+    border-bottom: 2px solid rgb(80,2,16);
+    padding: 0px 1.25vw 0px 0px;
+  }
+
 
   .f_icon{
     float: right;
@@ -415,11 +511,19 @@
   }
   .h_li{
     list-style: none;
-    margin:8px 20px auto 20px;
+    margin:0px 20px auto 20px;
     float: left;
     font-size:16px;
     color: rgba(80,2,16,1);
   }
+
+
+    .h_li:hover{
+      padding-top: 3px;
+      padding-bottom: 3px;
+      border-top: 4px solid rgb(148,2,29);
+      border-bottom:  4px solid rgb(148,2,29);
+    }
 
   .look{
     width: 684px;
@@ -466,6 +570,12 @@
     margin: 0px;
     color: rgba(251,231,216,0.7);
     padding: 7px 0px 0px 16px;
+  }
+  .see:hover{
+    background-color: rgba(128,66,74,1);
+  }
+  .p_see:hover{
+    color: rgba(255,255,255,1);
   }
 
   .o_t_t_f{
@@ -521,7 +631,7 @@
 
   .u_img{
     margin-left: 40px;
-    margin-top: 47px;
+    margin-top: 44px;
     float: left;
     height: 211px;
   }
@@ -536,6 +646,95 @@
     margin-top: 43px;
     float: left;
     height: 211px;
+  }
+
+  /*.u_img:hover{
+    border-bottom: 3px solid rgb(222,206,194);
+    border-right: 3px solid rgb(222,206,194);
+    margin-left: 38px;
+    margin-top: 42px;
+  }
+  .m_img:hover{
+  }
+  .d_img:hover{
+    border-bottom: 3px solid rgb(222,206,194);
+    border-right: 3px solid rgb(222,206,194);
+    margin-left: 38px;
+    margin-top: 41px;
+  }*/
+
+  .black{
+    margin-left: 40px;
+    margin-top: 44px;
+    float: left;
+    width: 355px;
+    height: 211px;
+    position: absolute;
+  }
+  .black_p{
+    width: 355px;
+    height: 211px;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .black:hover{
+    background-color: rgba(0,0,0,0.3);
+  }
+  .black_p:hover{
+    opacity: 1;
+    margin: 80px 0px 0px 85px;
+    font-size: 50px;
+  /*color: rgba(0,0,0,1);*/
+    color: rgba(230,230,230,1);
+  }
+  .black_m{
+    margin-left: 360px;
+    margin-top: 10px;
+    width: 355px;
+    height: 211px;
+    position: absolute;
+  }
+  .black_m_p{
+    width: 355px;
+    height: 211px;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .black_m:hover{
+    background-color: rgba(0,0,0,0.3);
+  }
+  .black_m_p:hover{
+    opacity: 1;
+    margin: 80px 0px 0px 85px;
+    font-size: 50px;
+    color: rgba(230,230,230,1);
+  }
+  .black_d{
+    margin-left: 40px;
+    margin-top: 43px;
+    float: left;
+    width: 355px;
+    height: 211px;
+    position: absolute;
+  }
+  .black_d_p{
+    width: 355px;
+    height: 211px;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .black_d:hover{
+    background-color: rgba(0,0,0,0.3);
+  }
+  .black_d_p:hover{
+    opacity: 1;
+    margin: 80px 0px 0px 85px;
+    font-size: 50px;
+    color: rgba(230,230,230,1);
+  /*color: rgba(255,255,255,1);*/
   }
 
   .r_p{
@@ -553,7 +752,6 @@
     background-color: rgb(251,231,216);
     margin-left: 67px;
     margin-top: 54px;
-
   }
 
   .u_u_p{
@@ -609,14 +807,21 @@
     height: 84px;
     margin-right: 38px;
   }
+
   .f_u_p{
     width: 160px;
     height: 17px;
     margin: 0px;
     padding: 4px 0px 0px 14px;
+    margin-bottom: 2px;
     background-color: rgb(222,206,194);
     color: rgb(80,2,16);
     font-size: 14px;
+  }
+
+  .f_u_p:hover{
+    background-color: rgba(80,2,16,0.7);
+    color: rgb(222,206,194);
   }
 
   .f_u_p_m{
@@ -624,16 +829,29 @@
     height: 17px;
     margin: 0px;
     padding: 4px 0px 0px 14px;
+    margin-bottom: 2px;
     background-color: rgb(222,206,194);
     color: rgb(80,2,16);
     font-size: 14px;
   }
+
+  .f_u_p_m:hover{
+    background-color: rgba(80,2,16,0.7);
+    color: rgb(222,206,194);
+  }
+
   .f_d_p{
     margin: 0px;
     width: 160px;
-    padding: 2px 0px 0px 14px;
+    margin-bottom: 2px;
+    padding: 0px 0px 0px 14px;
     font-size: 10px;
     color: rgb(0,0,0);
+  }
+
+  .f_d_p:hover{
+    border-bottom: 2px solid rgb(80,2,16);
+    padding: 0px 14px 0px 0px;
   }
 
   .f_icon{
@@ -659,12 +877,6 @@
     width: 5vw;
     float: left;
     margin-top: 5vw;
-  }
-  .nav_s_p{
-    float: right;
-    color: rgb(148,2,29);
-    margin-top: 5.8vw;
-    font-size: 3vw;
   }
   .clear{
     clear: both;
@@ -692,7 +904,7 @@
 
   .logo{
     width: 15vw;
-    margin-left: 44vw;
+    margin-left: 42vw;
     margin-top: 0px;
   }
 
@@ -741,18 +953,25 @@
   }
 
   .h_ul{
+    display:none;
+    width: 92vw;
     margin: 0px;
-    width: 0;
-    height: 0px;
-    opacity: 0;
+    margin-left: 2.5vw;
+    padding: 0px;
+    background-color: rgba(80,2,16,0.6);
   }
   .h_li{
     list-style: none;
+    float: none;
     margin:0;
-    float: left;
-    font-size:0px;
-    color: rgba(80,2,16,1);
-    opacity: 0;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-align: center;
+    font-size:24px;
+    color: rgba(254,243,239,1);
+  }
+  .h_li:hover{
+    background-color: rgba(80,2,16,0.6);
   }
 
   .look{
@@ -761,6 +980,15 @@
     margin:0;
     margin-top: 14px;
   }
+
+/*  .black_look{
+    width: 100vw;
+    height: 56.4vw;
+    position: absolute;
+  }
+  .black_look:hover{
+    background-color: rgba(0,0,0,0.2);
+  }*/
 
   .img_s{
     position: absolute;
@@ -778,7 +1006,7 @@
     margin: 0px;
     padding-top:20vw;
     font-size: 3.5vw;
-    color: rgba(80,2,16,0.75);
+    color: rgba(80,2,16,1);
   }
   .d_p_look{
     width: 0;
@@ -792,7 +1020,7 @@
     margin-left: 5vw;
     margin-top: 0vw;
     font-size: 2.8vw;
-    color: rgba(0,0,0,0.75);
+    color: rgba(0,0,0,1);
     text-align:center;
   }
 
@@ -810,6 +1038,12 @@
     margin: 0px;
     color: rgba(251,231,216,1);
     padding: 1vw 0px 0px 2.5vw;
+  }
+  .see:hover{
+    background-color: rgba(128,66,74,1);
+  }
+  .p_see:hover{
+    color: rgba(251,231,216,1);
   }
 
   .o_t_t_f{
@@ -838,7 +1072,7 @@
   .p_new{
     margin-top: 2vw;
     font-size: 5vw;
-    margin-left: 46vw;
+    margin-left: 42vw;
     margin-bottom: 1vw;
     color: rgb(148,2,29);
   }
@@ -868,6 +1102,75 @@
     margin-left: 2.3vw;
     width: 90vw;
     margin-bottom: 8vw;
+  }
+  .black{
+    margin-left: 3.5vw;
+    float: left;
+    width: 90vw;
+    height: 53.5vw;
+    position: absolute;
+  }
+  .black_p{
+    width: 90vw;
+    height: 53.5vw;
+    margin: 0;
+    opacity: 0;
+  }
+  .black:hover{
+    background-color: rgba(0,0,0,0.3);
+  }
+  .black_p:hover{
+    opacity: 1;
+    margin: 20vw 0px 0px 22vw;
+    font-size: 13vw;
+  /*color: rgba(0,0,0,1);*/
+    color: rgba(230,230,230,1);
+  }
+  .black_m{
+    margin-left: 3.5vw;
+    float: left;
+    width: 90vw;
+    height: 53.5vw;
+    position: absolute;
+  }
+  .black_m_p{
+    width: 90vw;
+    height: 53.5vw;
+    margin: 0;
+    opacity: 0;
+  }
+  .black_m:hover{
+    background-color: rgba(0,0,0,0.3);
+  }
+  .black_m_p:hover{
+    opacity: 1;
+    margin: 20vw 0px 0px 22vw;
+    font-size: 13vw;
+  /*color: rgba(0,0,0,1);*/
+    color: rgba(230,230,230,1);
+  }
+  .black_d{
+    margin-left: 3.5vw;
+    float: left;
+    width: 90vw;
+    height: 53.5vw;
+    position: absolute;
+  }
+  .black_d_p{
+    width: 90vw;
+    height: 53.5vw;
+    margin: 0;
+    opacity: 0;
+  }
+  .black_d:hover{
+    background-color: rgba(0,0,0,0.3);
+  }
+  .black_d_p:hover{
+    opacity: 1;
+    margin: 20vw 0px 0px 22vw;
+    font-size: 13vw;
+  /*color: rgba(0,0,0,1);*/
+    color: rgba(230,230,230,1);
   }
 
   .r_p{
@@ -970,6 +1273,9 @@
     margin-right: 25vw;
     margin-top: 0.3vw;
   }
+  .see_s:hover{
+    background-color: rgba(255,255,255,0.7);
+  }
 
   .see_s_m{
     float: right;
@@ -979,15 +1285,22 @@
     background-color: rgb(150,107,95);
     border-radius: 7px;
     margin-right: 21vw;
-    margin-top: 0.3vw;
+    margin-top: 0.
+  }
+  .see_s_m:hover{
+    background-color: rgba(255,255,255,0.7);
   }
 
   .p_see_s{
     margin: 0;
+    height: 3vw;
     color: rgb(255,255,255);
     padding-top: 0.25vw;
     padding-left: 1.5vw;
     font-size: 1vw;
+  }
+  .p_see_s:hover{
+    color: rgb(150,107,95);
   }
 
   .f_icon{
