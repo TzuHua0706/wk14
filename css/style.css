@@ -248,14 +248,13 @@
     color: rgba(230,230,230,1);
   }
   .black_m{
-    margin-left: 53.5vw;
+    margin-left: 55.2vw;
     margin-top: 8vw;
     width: 40vw;
     height: 25vw;
     position: absolute;
   }
   .black_m_p{
-    width: 40vw;
     height: 25vw;
     margin: 0;
     opacity: 0;
@@ -1134,6 +1133,7 @@
     position: absolute;
   }
   .black_m_p{
+    width: 90vw;
     height: 53.5vw;
     margin: 0;
     opacity: 0;
